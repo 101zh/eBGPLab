@@ -27,7 +27,11 @@ Additionally, the PCs can have any IP that is within the subnet of the link that
 
 ### <center>IPv4 Topology</center>
 
+![IPv4 Topology Image](Images/IPv4.Topology.png)
+
 ### <center>IPv6 Topology</center>
+
+![IPv4 Topology Image](Images/IPv6.Topology.png)
 
 ## Address Table
 
