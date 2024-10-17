@@ -22,7 +22,7 @@ This is section is background info on key concept/parts of the configuration. It
 
 ## Topology
 
-These are the topologies for both IPv4 and IPv6, each link is labeled with the network number and subnet mask of the link. Then each interface is labeled with the 4th octet of the usable IP address within the subnet of that link.\
+These are the topologies for both IPv4 and IPv6, each link is labeled with the network number and subnet mask of the link. Then each interface is labeled with the last octet or hextet of the usable IPv4/IPv6 address within the subnet of that link.\
 Additionally, the PCs can have any IP that is within the subnet of the link that they are on. **DHCP is not setup**.
 
 ### <center>IPv4 Topology</center>
