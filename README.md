@@ -9,8 +9,8 @@
      2. [**IPv6 Topology**](#ipv6-topology)
 4. [**Address Table**](#address-table)
 5. [**Device Overview**](#device-overview)
-6. [**ICMPv4 Ping Across Network**](#icmpv4-ping-across-network)
-7. [**ICMPv6 Ping Across Network**](#icmpv6-ping-across-network)
+6. [**ICMPv4 Traceroute Across Network**](#icmpv4-traceroute-across-network-from-pc0)
+7. [**ICMPv6 Traceroute Across Network**](#icmpv6-traceroute-across-network-from-pc0)
 8. [**IPv4 Routing Table**](#ipv4-topology)
 9. [**IPv6 Routing Table**](#ipv6-topology)
 
