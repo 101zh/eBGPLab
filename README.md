@@ -56,9 +56,42 @@ This Topology Consists of...
 
 - Six 4321 routers running Cisco IOS XE Software, Version 16.9 Universal K9
 
-## ICMPv4 Ping Across Network
+## ICMPv4 Traceroute Across Network From PC0
 
-## ICMPv6 Ping Across Network
+```text
+C:\>tracert 10.0.30.2
+
+Tracing route to DESKTOP-43DJSK3 [10.0.30.2]
+over a maximum of 30 hops:
+
+  1    3 ms   <1 ms    <1 ms  10.0.20.1
+  2   <1 ms   <1 ms    <1 ms  10.0.0.2
+  3   <1 ms    1 ms    <1 ms  192.168.0.2
+  4   <1 ms   <1 ms    <1 ms  10.0.1.2
+  5   <1 ms   <1 ms    <1 ms  192.168.1.2
+  6    1 ms    1 ms     1 ms  10.0.3.2
+  7    1 ms   <1 ms     1 ms  DESKTOP-43DJSK3 [10.0.30.2]
+
+Trace complete.
+```
+
+## ICMPv6 Traceroute Across Network From PC0
+
+```text
+C:\>tracert 1:30::2
+
+Tracing route to 1:30::2 over a maximum of 30 hops
+
+  1   <1 ms   <1 ms    <1 ms  1:20::1
+  2    1 ms   <1 ms    <1 ms  1::1
+  3    1 ms   <1 ms    <1 ms  2::2
+  4    1 ms    1 ms    <1 ms  1:1::2
+  5    1 ms   <1 ms     1 ms  2:1::2
+  6    1 ms    1 ms     1 ms  1:3::2
+  7    1 ms    1 ms     1 ms  1:30::2
+
+Trace complete.
+```
 
 ## R1 IPv4 Routing Table
 
