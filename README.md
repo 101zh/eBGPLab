@@ -22,6 +22,30 @@ The purpose of this lab is to setup 3 AS’s and use eBGP to route between the 3
 
 This is section is background info on key concept/parts of the configuration. It is directed an audience that knows some networking, but their knowledge is limited.
 
+### Routing Protocols
+
+Routing protocols can automate the process of getting destination routes to other networks in some manner, requiring some initial setup.
+
+### eBGP
+
+Exterior Border Gateway Protocol (eBGP) is an exterior gateway protocol, which means that it can share routing information between autonomous systems (AS’s).
+
+- Each AS has one process/AS of a routing protocol running for it. For example, one organization uses OSPF, while another uses OSPF in a different process or a different routing protocol; these two organizations can establish communication between their own AS’s by using eBGP.
+
+What allows eBGP to communicate between AS’s is its ability to redistribute routes. Routes can be redistributed into eBGP, then eBGP can redistribute those routes into any other routing protocol. This is extremely important in that Internet Service Providers (ISPs) may use different routing protocols, so eBGP can help them share routing information. But another problem can crop up: having multiple routes to one destination. Although this isn’t a problem in and of itself, it’s important for eBGP to choose a route logically. There are many ways to manually influence the path selection for eBGP, like weight and local preference. If eBGP is not manually set to influence the path selection, it will depend on a series of attributes to determine the shortest path to the destination. (these attributes are not listed, since there are eleven of them)
+
+### OSPF
+
+Open Shortest Path First (OSPF) is a link-state routing protocol for Internet Protocol (IP). OSPF supplies destination routes to its routers by gathering information from the links on each router; then each router will forward that link-state information throughout the entire network. Other routers will use this information to create a topology of the network, which will supply the routes for each router.
+
+### EIGRP
+
+Enhanced Interior Gateway Routing Protocol (EIGRP) is a distance-vector routing protocol that uses distance, calculated with bandwidth and delay, for routing decisions in the network. EIGRP keeps a topology table created with information gathered by neighbors, which EIGRP will use to decide which routes to give to the router. It is worth noting that unlike other distance-vector routing protocols, EIGRP doesn’t send its table periodically, but only when a topology or link-state change has occurred.
+
+### IS-IS
+
+Intermediate System to Intermediate System (IS-IS) is also a link-state routing protocol. Though there are some differences between it and OSPF: IS-IS can route for IPv4 and IPv6 in the same instance and IS-IS can do partial route calculation, allowing for the network to converge quicker. Other than these differences, IS-IS and OSPF are quite similar protocols.
+
 ## Topology
 
 These are the topologies for both IPv4 and IPv6, each link is labeled with the network number and subnet mask of the link. Then each interface is labeled with the last octet or hextet of the usable IPv4/IPv6 address within the subnet of that link.\
