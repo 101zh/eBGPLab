@@ -16,6 +16,8 @@
 
 ## Purpose
 
+The purpose of this lab is to setup 3 AS’s and use eBGP to route between the 3 AS’s. Students will learn how to redistribute routes between gateway protocols and routing protocols, what address-families are, and how to declare eBGP neighbors. Students will also brush up on skills needed to setup networks with routing protocols, including advertising interfaces, subnetting, and debugging. Additionally, Students may learn how to configure routing protocols they have not used before for their separate AS’s.
+
 ## Background
 
 This is section is background info on key concept/parts of the configuration. It is directed an audience that knows some networking, but their knowledge is limited.
