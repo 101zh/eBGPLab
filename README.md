@@ -1,4 +1,4 @@
-# Multiarea OSPF Configuration with IPv4 & IPv6
+# Exterior Border Gateway Protocol Configuration With IPv4 and IPv6
 
 ## Contents
 
