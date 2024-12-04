@@ -4,15 +4,20 @@
 
 1. [**Purpose**](#purpose)
 2. [**Background**](#background)
+    1. [**Routing Protocols**](#routing-protocols)
+    2. [**eBGP**](#ebgp)
+    3. [**OSPF**](#ospf)
+    4. [**EIGRP**](#eigrp)
+    5. [**IS-IS**](#is-is)
 3. [**Topology**](#topology)
-     1. [**IPv4 Topology**](#ipv4-topology)
-     2. [**IPv6 Topology**](#ipv6-topology)
+    1. [**IPv4 Topology**](#ipv4-topology)
+    2. [**IPv6 Topology**](#ipv6-topology)
 4. [**Address Table**](#address-table)
 5. [**Device Overview**](#device-overview)
 6. [**ICMPv4 Traceroute Across Network**](#icmpv4-traceroute-across-network-from-pc0)
 7. [**ICMPv6 Traceroute Across Network**](#icmpv6-traceroute-across-network-from-pc0)
-8. [**IPv4 Routing Table**](#ipv4-topology)
-9. [**IPv6 Routing Table**](#ipv6-topology)
+8. [**IPv4 Routing Table**](#r1-ipv4-routing-table)
+9. [**IPv6 Routing Table**](#r1-ipv6-routing-table)
 
 ## Purpose
 
