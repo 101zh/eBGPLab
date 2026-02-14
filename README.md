@@ -1,8 +1,8 @@
 # Exterior Border Gateway Protocol Configuration With IPv4 and IPv6
 
-A lab which configures a computer network with external border gateway protocol. Device configurations and other diagnostic information can be find in the corresponding folders.
+A lab which configures a computer network with external border gateway protocol. Device configurations and other diagnostic information can be found in the corresponding folders.
 
-Background information on lab concepts can be found here:
+Background information on lab concepts can be found here: <https://101zh.github.io/networking/>
 
 ## Contents
 
@@ -74,8 +74,8 @@ over a maximum of 30 hops:
   1    3 ms   <1 ms    <1 ms  10.0.20.1
   2   <1 ms   <1 ms    <1 ms  10.0.0.2
   3   <1 ms    1 ms    <1 ms  192.168.0.2
-  4   <1 ms   <1 ms    <1 ms  10.0.-2
-  5   <1 ms   <1 ms    <1 ms  192.168.-2
+  4   <1 ms   <1 ms    <1 ms  10.0.1.2
+  5   <1 ms   <1 ms    <1 ms  192.168.1.2
   6    1 ms    1 ms     1 ms  10.0.3.2
   7    1 ms   <1 ms     1 ms  DESKTOP-43DJSK3 [10.0.30.2]
 
@@ -119,13 +119,13 @@ Gateway of last resort is not set
       10.0.0.0/8 is variably subnetted, 7 subnets, 2 masks
 C        10.0.0.0/24 is directly connected, GigabitEthernet0/0/1
 L        10.0.0.1/32 is directly connected, GigabitEthernet0/0/1
-O E2     10.0.-0/24 [110/10] via 10.0.0.2, 01:07:00, GigabitEthernet0/0/1
+O E2     10.0.1.0/24 [110/10] via 10.0.0.2, 01:07:00, GigabitEthernet0/0/1
 O E2     10.0.3.0/24 [110/10] via 10.0.0.2, 01:06:30, GigabitEthernet0/0/1
 C        10.0.20.0/24 is directly connected, GigabitEthernet0/0/0
 L        10.0.20.1/32 is directly connected, GigabitEthernet0/0/0
 O E2     10.0.30.0/24 [110/10] via 10.0.0.2, 01:06:30, GigabitEthernet0/0/1
 O     192.168.0.0/24 [110/2] via 10.0.0.2, 01:09:00, GigabitEthernet0/0/1
-O E2  192.168.-0/24 [110/10] via 10.0.0.2, 01:06:30, GigabitEthernet0/0/1
+O E2  192.168.1.0/24 [110/10] via 10.0.0.2, 01:06:30, GigabitEthernet0/0/1
 ```
 
 ## R1 IPv6 Routing Table
